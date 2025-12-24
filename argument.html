@@ -6,25 +6,311 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>pemahaman tentang ilmu komputer</h1>
-    <p>pada jaman sekarang internet sudah marak dan internet tidak ada jauh dengan komputer,
-        <br>
-        komputer telah banyak membantu manusia dalam menelusuri internet atau membuat internet</p>
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>OSIS SKANET</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <p><mark><cite> yusuf kalla </cite></mark>  selaku penemu komputer pertaman berkta jika manusia tidak akan jauh dari internet <q>apapun yang  kaamu pikirkan
-        </q>
-            ia mengatakan hal itu karena banyak masyarakat yang banyak menggunakan internet,
-            dan dengan banyaknya inovasi manusia menghasikan <abbr title="word wide web">WWW</abbr></p>
-            <p>
-               <small> &copy; 2024 siswa online . all complete </small> <br>
-            &#169; 2025 murid onnline . all complete  
-        </p>
-        <p>di internet terddapatt banyak kebebasan dalam menjalankannya contohnya </p>
-        <dl>untukk menonton vidio</dl> <dd> <ol type="I">
-                <li>youtube</li>
-                <li>tiktok</li>
-                <li>snack video</li>
-            </ol>
-        </dd>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background:#eef2f7;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(135deg,#0b4da2,#1e88e5);
+    color:white;
+    padding:20px 30px;
+}
+header h1{font-size:28px;}
+header p{font-size:14px;}
+
+/* NAVBAR */
+nav{
+    background:#ffca28;
+}
+nav ul{
+    display:flex;
+    list-style:none;
+    flex-wrap:wrap;
+}
+nav ul li a{
+    padding:12px 20px;
+    display:block;
+    color:#083b7a;
+    text-decoration:none;
+    font-weight:bold;
+    cursor:pointer;
+}
+nav ul li a:hover,
+nav ul li a.active{
+    background:#ffd54f;
+}
+
+/* SECTION */
+section{
+    padding:50px 20px;
+    display:none;
+}
+section.active{
+    display:block;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.title{
+    text-align:center;
+    color:#0b4da2;
+    margin-bottom:30px;
+    font-size:28px;
+}
+.title::after{
+    content:'';
+    width:70px;
+    height:4px;
+    background:#ffca28;
+    display:block;
+    margin:10px auto;
+    border-radius:2px;
+}
+
+/* HERO */
+.hero{
+    background:
+    linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    padding:80px 20px;
+    text-align:center;
+    border-radius:10px;
+    margin-bottom:30px;
+}
+
+/* BOX */
+.box{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 6px 15px rgba(0,0,0,.1);
+    margin-bottom:20px;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+/* PROGRAM */
+.program ul{
+    padding-left:20px;
+}
+.program li{
+    margin-bottom:10px;
+}
+
+/* BERITA */
+.news{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+.news span{
+    font-size:12px;
+    color:gray;
+}
+
+/* GALERI */
+.galeri{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+}
+.galeri img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* FOOTER */
+footer{
+    background:#083b7a;
+    color:white;
+    text-align:center;
+    padding:18px;
+    font-size:13px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>OSIS SKANET</h1>
+    <p>Organisasi Siswa Intra Sekolah SMK Negeri Takeran</p>
+</header>
+
+<nav>
+<ul>
+    <li><a class="active" onclick="showSection('beranda',this)">Beranda</a></li>
+    <li><a onclick="showSection('profil',this)">Profil</a></li>
+    <li><a onclick="showSection('program',this)">Program Kerja</a></li>
+    <li><a onclick="showSection('berita',this)">Berita</a></li>
+    <li><a onclick="showSection('galeri',this)">Galeri</a></li>
+</ul>
+</nav>
+
+<!-- BERANDA -->
+<section id="beranda" class="active">
+<div class="container">
+
+<div class="hero">
+    <h2>Selamat Datang di Website OSIS SKANET</h2>
+    <p>Wadah Kreativitas, Aspirasi, dan Prestasi Siswa SMK Negeri Takeran</p>
+</div>
+
+<div class="grid">
+
+<div class="box">
+<h3>🏫 Sambutan</h3>
+<p>
+Selamat datang di website resmi OSIS SKANET.
+Website ini dibuat sebagai media informasi, komunikasi,
+dan dokumentasi kegiatan OSIS SMK Negeri Takeran.
+Melalui website ini kami berharap seluruh warga sekolah
+dapat mengetahui program dan kegiatan OSIS.
+</p>
+</div>
+
+<div class="box">
+<h3>🎯 Visi</h3>
+<p>
+Mewujudkan OSIS SMK Negeri Takeran yang aktif, kreatif,
+inovatif, berkarakter, dan berprestasi serta mampu menjadi
+teladan bagi seluruh siswa.
+</p>
+</div>
+
+<div class="box">
+<h3>📌 Misi</h3>
+<ul>
+<li>Mengembangkan jiwa kepemimpinan siswa</li>
+<li>Meningkatkan kedisiplinan dan tanggung jawab</li>
+<li>Mendorong kreativitas dan prestasi siswa</li>
+<li>Menjalin kerja sama antar warga sekolah</li>
+</ul>
+</div>
+
+<div class="box">
+<h3>🤝 Tujuan OSIS</h3>
+<p>
+OSIS bertujuan sebagai wadah pengembangan potensi siswa
+baik dalam bidang akademik maupun non-akademik,
+serta sebagai sarana penyaluran aspirasi siswa
+dalam lingkungan sekolah.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- PROFIL -->
+<section id="profil">
+<div class="container">
+<h2 class="title">Profil OSIS</h2>
+<div class="box">
+<p>
+OSIS SKANET merupakan organisasi resmi siswa SMK Negeri Takeran
+yang berperan dalam pembinaan kepemimpinan, karakter,
+dan kreativitas siswa melalui berbagai kegiatan sekolah dan sosial.
+</p>
+</div>
+</div>
+</section>
+
+<!-- PROGRAM -->
+<section id="program">
+<div class="container">
+<h2 class="title">Program Kerja</h2>
+<div class="box program">
+<ul>
+<li>Masa Pengenalan Lingkungan Sekolah (MPLS)</li>
+<li>Latihan Dasar Kepemimpinan Siswa (LDKS)</li>
+<li>Peringatan Hari Besar Nasional</li>
+<li>Class Meeting</li>
+<li>Bakti Sosial</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- BERITA -->
+<section id="berita">
+<div class="container">
+<h2 class="title">Berita Terbaru</h2>
+<div class="news">
+<div class="box">
+<h4>Pelantikan Pengurus OSIS</h4>
+<span>10 September 2025</span>
+</div>
+<div class="box">
+<h4>Kegiatan Bakti Sosial</h4>
+<span>25 Agustus 2025</span>
+</div>
+<div class="box">
+<h4>Class Meeting Semester Ganjil</h4>
+<span>15 Desember 2025</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- GALERI -->
+<section id="galeri">
+<div class="container">
+<h2 class="title">Galeri Kegiatan</h2>
+<div class="galeri">
+<img src="https://picsum.photos/400/300?1">
+<img src="https://picsum.photos/400/300?2">
+<img src="https://picsum.photos/400/300?3">
+<img src="https://picsum.photos/400/300?4">
+</div>
+</div>
+</section>
+
+<footer>
+© 2025 OSIS SKANET - SMK Negeri Takeran
+</footer>
+
+<script>
+function showSection(id, el){
+    document.querySelectorAll("section").forEach(sec=>{
+        sec.classList.remove("active");
+    });
+    document.getElementById(id).classList.add("active");
+
+    document.querySelectorAll("nav a").forEach(a=>{
+        a.classList.remove("active");
+    });
+    el.classList.add("active");
+}
+</script>
+
+</body>
+</html>
+
 </body>
 </html>
